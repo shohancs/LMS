@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+/* =============== Global CSS Code Start ===============  */
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;	
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+/* =============== Global CSS Code End ===============  */
+
+/* =============== Header CSS Code Start ===============  */
+header{
+	background-color: #f7f7f7;
+	padding: 20px 0;
+}
+
+.navbar-brand{
+	color: #ff0000;
+	font-weight: 400;
+	font-size: 27px;
+}
+
+.navbar-brand:hover{
+	color: #ff0000;
+}
+
+.navbar-brand span{
+	color: #378e00;
+	font-weight: 600;
+}
+/* =============== Header CSS Code End ===============  */
+
+/* =============== All Books CSS Code Start ===============  */
+
+/* Card Part Design Start */
+
+.book-thumbnail{
+	position: relative;
+}
+
+.author-info {
+    position: absolute;    
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0px;
+    width: 100%;
+    color: #fff;    
+    text-align: center;
+
+}
+
+.book-item .book-info {
+	background: #f7f7f7;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 1px 10px 15px #ccc;	
+}
+
+.book-item .book-info h4{
+	font-size: 22px;
+    font-weight: 600;
+    color: #378e00;
+    line-height: 26px;
+}
+
+.book-item .book-info .subtitle{
+	color: #333;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+}
+
+.book-item .book-info .quantity{
+	color: #333;
+	font-weight: 400;
+	font-style: normal;
+	margin: 0;
+}
+
+.book-item .book-info .quantity span{
+	font-weight: 600;
+	color: #ff0000;
+}
+
+.book-item .book-info .book-btn{
+	position: relative;
+	overflow: hidden;
+	background: #333;
+	padding: 10px 40px;
+	display: block;
+	margin: 15px 0;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	z-index: 1;
+	transition: all 0.4s ease-in-out;
+}
+
+.book-item .book-info .book-btn::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -100%;
+	background: #ff0000;
+	z-index: -1;
+	transition: all 0.4s ease-in-out;
+}
+
+.book-item .book-info .book-btn:hover::after {
+	left: 0;
+}
+/* Card Part Design End */
+
+/* =============== All Books CSS Code End ===============  */
+
+/* =============== Details Page CSS Code Start ===============  */
+
+/* Book Details part start  */
+.book_details h4{
+	font-size: 36px;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.book_details .subtitle{
+	font=size: 15px;
+}
+
+.book_details .author-name {
+	color: #378e00;
+}
+
+.book_details .quantity{
+	color: blue;
+	font-weight: 400;
+	font-style: normal;
+	margin: 0;
+}
+
+.book_details .quantity #quantityValue{
+	font-weight: 600;
+	color: #ff0000;
+}
+
+.book_details .book-btn{
+	position: relative;
+	overflow: hidden;
+	background: #333;
+	padding: 10px 40px;
+	display: block;
+	margin: 15px 0;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	z-index: 1;
+	transition: all 0.4s ease-in-out;
+}
+
+.book_details .book-btn::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -100%;
+	background: #ff0000;
+	z-index: -1;
+	transition: all 0.4s ease-in-out;
+}
+
+.book_details .book-btn:hover::after {
+	left: 0;
+}
+/* Book Details part End  */
+
+/* =============== Details Page CSS Code End ===============  */
+
+/* =============== Search-option CSS Code Start ===============  */
+
+.search-option .book-btn{
+	position: relative;
+	overflow: hidden;
+	background: #333;
+	padding: 10px 40px;
+	display: block;
+	margin: 15px 0;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	z-index: 1;
+	transition: all 0.4s ease-in-out;
+	border: 0;
+	border-radius: 0;
+}
+
+.search-option .book-btn::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 100%;
+	background: #ff0000;
+	z-index: -1;
+	transition: all 0.4s ease-in-out;
+}
+
+.search-option .book-btn:hover::after {
+	left: 0;
+}
+/* =============== Search-option CSS Code End ===============  */
+
+.action-btn ul li a {
+	color: #BB2D3B;
+}
+
+
+.action-btn ul,
+.modal-btn ul{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+.action-btn ul li,
+.modal-btn ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 0px 5px;
+}
+.action-btn ul li .fa-pen-to-square{
+	color: #28A745;
+}
+.action-btn ul li .fa-trash-can{
+	color: #BB2D3B;
+}
